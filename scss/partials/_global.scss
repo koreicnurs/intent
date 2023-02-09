@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* font-family: 'Bitter', serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+body {
+  font-family: 'Bitter', serif;
+  font-size: 14px;
+  color: #fff;
+  background: #fff;
+  
+  @include sm {
+    font-size: 12px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

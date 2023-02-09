@@ -1,0 +1,57 @@
+.main-content {
+  background: url(../images/main.jpg) 50% no-repeat;
+  background-size: cover;
+  padding-bottom: 220px;
+
+  // .main-content__title
+
+  &__title {
+    font-size: $main-content;
+    margin: 0;
+    padding-top: 96px;
+
+    @include sm {
+      font-size: 18px;
+    }
+
+  }
+
+  &__title-span {
+    display: block;
+    background: rgba($color: #000000, $alpha: 0.7);
+    word-spacing: 5px;
+    padding-left: 13px;
+    margin-bottom: 1px;
+    
+
+    @include sm {
+      padding-top: 7px;
+    }
+    
+  }
+
+}
+
+.main-span-1 {
+  @include sprite-h-w (355px, 43px);
+  
+  @include sm {
+    @include sprite-h-w (275px, 43px);
+  }
+}
+
+.main-span-2 {
+  @include sprite-h-w (305px, 43px);
+
+  @include sm {
+    @include sprite-h-w (235px, 43px);
+  }
+}
+
+.main-span-3 {
+  @include sprite-h-w (179px, 43px);
+  
+  @include sm {
+    @include sprite-h-w (135px, 43px);
+  }
+}

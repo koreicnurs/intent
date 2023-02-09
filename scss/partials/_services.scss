@@ -1,0 +1,90 @@
+%css-sprite-services {
+  content: '';
+  display: inline-block;
+}
+
+.services {
+  background: url(../images/services-bg.jpg) 50% no-repeat;
+  background-size: cover;
+  border-bottom: 8px solid #ea5a4b;
+  padding-top: 49px;
+}
+
+.services-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.services-block-content {
+  width: 30%;
+  padding: 0 10px 0 3px;
+
+  @include md {
+    width: 50%;
+  }
+
+  @include sm {
+    width: 90%;
+  }
+
+  // .services-block-content__title
+    &__inner-top {
+      display: flex;
+    }
+
+    &__title {
+      color: $header-nav-color;
+      font-size: 18px;
+      margin-top: 4px;
+      margin-bottom: 15px;
+      position: relative;
+
+      @include sm {
+        font-size: 16px;
+      }
+    }
+
+    &__title::after {
+      @extend %css-sprite-services;
+      @include sprite-h-w(17px, 17px);
+      position: absolute;
+      top: 4px;
+      left: -41px;
+    }
+
+
+    &__bg {
+      background: #000;
+      width: 31px;
+      height: 31px;
+      margin-right: 17px;
+    }
+
+		// .services-block-content__text
+
+		&__text {
+      color: $services-color-text;
+      font-family: $rotoboCondensed;
+      line-height: 18px;
+      margin: 0;
+      padding-bottom: 79px;
+		}
+}
+
+.content-3 {
+  padding: 0 5px 0 8px;
+}
+
+.service-title-1::after {
+  @include sprite(-150px, -33px);
+}
+
+.service-title-2::after {
+  @include sprite(-150px, 0px);
+  @include sprite-h-w(19px, 16px);
+}
+
+.service-title-3::after {
+  @include sprite(-150px, -50px);
+}

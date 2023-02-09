@@ -1,0 +1,20 @@
+@mixin sprite($x, $y) {
+  background: url(../images/sprite.png) $x $y no-repeat;
+}
+
+@mixin sprite-h-w ($x, $y) {
+  width: $x;
+  height: $y;
+}
+
+@mixin md {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
